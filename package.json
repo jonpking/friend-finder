@@ -1,0 +1,21 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "An app to match people with a compatible friend based on survey question results.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonpking/friend-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonpking/friend-finder/issues"
+  },
+  "homepage": "https://github.com/jonpking/friend-finder#readme"
+}
