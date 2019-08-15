@@ -8,268 +8,165 @@
     <title>Friend Finder Survey</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
 
+        <div class="form-group">
+            <h1>Survey Questions</h1>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <h2>About You</h2>
+        </div>
+
         <form>
 
             <div class="form-group">
-                <h1>Survey Questions</h1>
-            </div>
-
-            <hr>
-
-            <div class="form-group">
-                <h2>About You</h2>
-            </div>
-
-            <div class="form-group">
                 <label for="name-input">Name (Required)</label>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="name-input">
-                </div>
+                <input type="text" class="form-control" id="name-input" placeholder="Name">
             </div>
             <div class="form-group">
-                <label for="name-input">Link to Photo Image (Required)</label>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="name-input">
-                </div>
+                <label for="image-input">Link to Photo Image (Required)</label>
+                <input type="url" class="form-control" id="image-input" placeholder="Link">
             </div>
 
             <hr>
 
             <div class="form-group">
-                <h4>Question 1</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 2</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 3</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 4</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 5</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 6</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 7</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 8</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 9</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <h4>Question 10</h4>
-            </div>
-            <div class="form-group">
-                <p>Blah, Blah Blah, Blah Blah, Blah Blah, Blah</p>
-            </div>
-            <div class="form-group">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Select an Option
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-                    </div>
-                </div>
+                <label for="question1">BLAH BLAH</label>
+                <select class="form-control" id="question1">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                <label for="question2">BLAH BLAH</label>
+                <select class="form-control" id="question2">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question3">BLAH BLAH</label>
+                <select class="form-control" id="question3">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question4">BLAH BLAH</label>
+                <select class="form-control" id="question4">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question5">BLAH BLAH</label>
+                <select class="form-control" id="question5">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question6">BLAH BLAH</label>
+                <select class="form-control" id="question6">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question7">BLAH BLAH</label>
+                <select class="form-control" id="question7">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question8">BLAH BLAH</label>
+                <select class="form-control" id="question8">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question9">BLAH BLAH</label>
+                <select class="form-control" id="question9">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question10">BLAH BLAH</label>
+                <select class="form-control" id="question10">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neither Agree Nor Disagree)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block submit">Submit</button>
             </div>
 
             <hr>
@@ -286,15 +183,47 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+
+            var friend = {
+                question1: $("#question1").val().trim(),
+                question2: $("#question2").val().trim(),
+                question3: $("#question3").val().trim(),
+                question4: $("#question4").val().trim(),
+                question5: $("#question5").val().trim(),
+                question6: $("#question6").val().trim(),
+                question7: $("#question7").val().trim(),
+                question8: $("#question8").val().trim(),
+                question9: $("#question9").val().trim(),
+                question10: $("#question10").val().trim(),
+            };
+
+            console.log(friend);
+
+            $.post("/api/tables", friend, function (data) {
+                if (data) {
+                    alert("Friend Added!");
+                }
+                else {
+                    alert("No friend has been added...");
+                }
+
+                $("#question1").val("");
+                $("#question2").val("");
+                $("#question3").val("");
+                $("#question4").val("");
+                $("#question5").val("");
+                $("#question6").val("");
+                $("#question7").val("");
+                $("#question8").val("");
+                $("#question9").val("");
+                $("#question10").val("");
+            });
+        });
+    </script>
+
 </body>
 
 </html>
