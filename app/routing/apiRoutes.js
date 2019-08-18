@@ -7,7 +7,10 @@ module.exports = (app) => {
 
     app.post("/api/friends", function (req, res) {
         let friendInfo = req.body;
-        friendData.push(friendInfo);
+        let newScores = [];
+        for (let i = 0; i < friendInfo.scores.length; i++) {
+            newScores.push(parseInt(friendInfo.scores[i]));
+        }
         let min = 100000000;
         let index;
         for (let i = 0; i < friendData.length; i++) {
@@ -33,22 +36,17 @@ module.exports = (app) => {
                 Math.abs(friendData[i].scores[9]);
             difTotal = Math.abs(difQ1 + difQ2 + difQ3 + difQ4 + difQ5 +
                 difQ6 + difQ7 + difQ8 + difQ9 + difQ10);
-            console.log("total dif: " + difTotal);
-            console.log("min: " + min);
-            console.log("--------------");
             if (difTotal < min) {
                 min = difTotal;
                 index = i;
-                console.log("min after: " + min);
-                console.log("index: " + index);
-                console.log("-------------------------------------");
             }
         }
-        // loop through each person in array
-        // is total score < min?
-        // if yes, set index = i
-        // else check next
-        // display info for person[i] on modal
-        res.json(true);
+        friendData.push({
+            name: friendInfo.name,
+            photo: friendInfo.photo,
+            scores: newScores
+        });
+
+        res.json(friendData[index]);
     });
 }
